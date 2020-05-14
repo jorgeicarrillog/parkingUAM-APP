@@ -1,0 +1,23 @@
+<app-header title="Vagones"></app-header>
+
+<ion-content class="ion-padding">
+  <h3>
+    Disponibles: 22 <br>
+    Ocupados: 12 <br>
+    Total: 34
+  </h3>
+  <div class="ion-text-center ion-padding-vertical">
+    <ion-img class="ion-margin-vertical" src="assets/parking-example.png" ></ion-img>
+    <ion-button shape="round">
+      <ion-icon slot="start" name="navigate-outline"></ion-icon>
+      Ver ruta
+    </ion-button>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" routerLink="/parking/check-qr" routerLinkActive="router-link-active" >
+    <ion-fab-button>
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<app-footer></app-footer>

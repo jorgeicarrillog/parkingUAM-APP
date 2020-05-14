@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="light" class="ion-text-center">Añadir Vehículo</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid style="height: 100%;">
+    <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
+      <ion-col size="8" class="ion-text-center">
+        <ion-label>Ingrese la placa</ion-label>
+        <ion-input type="text" placeholder="Placa" class="ion-margin-vertical"></ion-input>
+        <ion-button  (click)="dismiss()" >
+          <ion-icon slot="start" name="save"></ion-icon>
+          Añadir
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

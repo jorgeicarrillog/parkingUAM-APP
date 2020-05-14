@@ -1,0 +1,27 @@
+<ion-menu side="start" menuId="home-menu" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navTo('/parking/list')">
+        <ion-icon slot="start" name="flag" size="large"></ion-icon>
+        <ion-label>Parqueaderos</ion-label>
+      </ion-item>
+      <ion-item (click)="navTo('/historic')">
+        <ion-icon slot="start" name="list" size="large"></ion-icon>
+        <ion-label>Histórico</ion-label>
+      </ion-item>
+      <ion-item (click)="navTo('/vehicles/list')">
+        <ion-icon slot="start" name="car-sport" size="large"></ion-icon>
+        <ion-label>Vehículos</ion-label>
+      </ion-item>
+      <ion-item (click)="navTo('/login')" routerLink="/login">
+        <ion-icon slot="start" name="exit" size="large"></ion-icon>
+        <ion-label>Salir</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

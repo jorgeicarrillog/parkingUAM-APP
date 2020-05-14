@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular';
+
+import { CheckQrPageRoutingModule } from './check-qr-routing.module';
+
+import { CheckQrPage } from './check-qr.page';
+import { ComponentsModule } from '../../../components/components.module';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    CheckQrPageRoutingModule,
+    ComponentsModule
+  ],
+  declarations: [CheckQrPage]
+})
+export class CheckQrPageModule {}

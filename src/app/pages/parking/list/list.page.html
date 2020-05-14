@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="openMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Parqueaderos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <p>
+          <strong>Vagones</strong><br>
+          Disponibles: 22 <br>
+          Ocupados: 12 <br>
+          Total: 34
+        </p>
+      </ion-label>
+      <ion-fab-button slot="end" color="primary" routerLink="/parking/detail" routerLinkActive="router-link-active" >
+        <ion-icon name="arrow-forward-outline" size="large"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>
+          <strong>Bavaria</strong><br>
+          Disponibles: 0 <br>
+          Ocupados: 23 <br>
+          Total: 23
+        </p>
+      </ion-label>
+      <ion-fab-button slot="end" color="danger" routerLink="/parking/detail" routerLinkActive="router-link-active">
+        <ion-icon name="arrow-forward-outline" size="large"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<app-footer></app-footer>

@@ -1,0 +1,27 @@
+<app-header title="Mis vehículos"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h1>VKJ 456</h1>
+      </ion-label>
+      <ion-fab-button class="ion-margin-vertical" style="width: 40px; height: 40px;" slot="end" color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h1>LSD 875</h1>
+      </ion-label>
+      <ion-fab-button class="ion-margin-vertical" style="width: 40px; height: 40px;" slot="end" color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+  </ion-list>
+  <ion-fab (click)="addVehicle()" vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button class="add-float">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
