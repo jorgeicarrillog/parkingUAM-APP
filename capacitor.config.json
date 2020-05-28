@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.parkinguam.app",
   "appName": "parkingUAM",
   "bundledWebRuntime": false,
   "npmClient": "npm",
@@ -7,6 +7,19 @@
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0
+    },
+    "CapacitorFirebaseAuth": {
+      "providers": ["google.com", "twitter.com", "facebook.com", "phone"],
+      "languageCode": "es",
+      "nativeAuth": false,
+      "permissions": {
+           "google": ["profile"]
+       }
+    },
+    "GoogleAuth": {
+      "scopes": ["profile", "email"],
+      "serverClientId": "965550217093-31g3njgnn1d3uah2tqlaq5qsgf97ssdi.apps.googleusercontent.com",
+      "forceCodeForRefreshToken" : true
     }
   },
   "cordova": {}

@@ -14,8 +14,11 @@
     <ion-button color="primary" expand="block" shape="round" routerLink="/parking/list" routerLinkActive="router-link-active" >
       Continuar como invitado
     </ion-button>
-    <ion-button color="primary" expand="block" shape="round">
+    <ion-button color="primary" expand="block" shape="round" (click)="loginGoogle()">
       <ion-icon slot="start" name="logo-google"></ion-icon> Cuenta UAM
     </ion-button>
+    <!--<ion-button color="primary" expand="block" shape="round" (click)="loginGoogle2()">
+      <ion-icon slot="start" name="logo-google"></ion-icon> Cuenta UAM
+    </ion-button>-->
   </div>
 </ion-content>

@@ -1,7 +1,34 @@
 <app-header title="Escanear QR"></app-header>
 
-<ion-content class="ion-padding">
-  <div class="ion-text-center ion-padding">
-    <ion-icon name="qr-code-outline" style="width: 250px; height: 250px;"></ion-icon>
-  </div>
+
+<ion-content [fullscreen]="true">
+  <ion-slides mode="ios" pager="ios" scrollbar="ios" [options]="swiperOpts" >
+    <ion-slide *ngIf="statusScan==false">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+            <h1 class="col-12">Ocupar espacio</h1>
+          </ion-col>
+          <ion-col size="12">
+            <!--<ion-button routerLink="/awaiting" expand="full" shape="round">
+              <span class="white">Escanear QR</span>
+            </ion-button>-->
+
+            <ion-button (click)="takePhoto()" expand="full" shape="round">
+              <span class="white">Escanear QR</span>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide *ngIf="statusScan==true">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+            <ion-img src="/assets/softwarb_qr_scanner_white.png"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
 </ion-content>

@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">parkingUAM</string>
     <string name="title_activity_main">parkingUAM</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="package_name">com.parkinguam.app</string>
+    <string name="custom_url_scheme">com.parkinguam.app</string>
+    <string name="server_client_id">AIzaSyCUsGp32v_NGDZMsh5-x9eVjVPLxZ3Nqcw</string>
 </resources>

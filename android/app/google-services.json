@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "965550217093",
+    "firebase_url": "https://estructura-de-datos-ii.firebaseio.com",
+    "project_id": "estructura-de-datos-ii",
+    "storage_bucket": "estructura-de-datos-ii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965550217093:android:93fec8888c5742b54696ec",
+        "android_client_info": {
+          "package_name": "com.parkinguam.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965550217093-31g3njgnn1d3uah2tqlaq5qsgf97ssdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDBEHZjxFQe16fMvQam-ZuEb89WGxj78c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965550217093-31g3njgnn1d3uah2tqlaq5qsgf97ssdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
